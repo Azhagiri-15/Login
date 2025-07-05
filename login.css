@@ -24,9 +24,10 @@ body {
   background: white;
   place-self: center;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 30px;
   width: 350px;
+  animation: fadeSlide 0.9s ease;
 }
 
 .form-box h2 {
@@ -83,4 +84,16 @@ a:hover {
 p {
   margin-top: 10px;
   text-align: center;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
